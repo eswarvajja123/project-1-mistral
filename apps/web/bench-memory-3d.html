@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Memory 3D benchmark harness</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #0b1219; }
+      #root { position: fixed; inset: 0; }
+      .bench-bar { position: fixed; top: 8px; left: 8px; z-index: 10; display: flex; gap: 6px; }
+      .bench-bar button { font: 12px system-ui; padding: 4px 10px; }
+      .bench-bar button.is-active { outline: 2px solid #57ccff; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/bench-memory-3d.tsx"></script>
+  </body>
+</html>
